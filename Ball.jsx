@@ -10,7 +10,7 @@ class Ball extends PureComponent {
         } else if (number <= 20) {
             background = '#f47373';
         } else if (number <= 30) {
-            background = '#ff8a65';
+            background = '#37d67a';
         } else if (number <= 40) {
             background = '#2ccce4';
         } else {
