@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import 'style.css';
 
 class Ball extends PureComponent {
     render() {
