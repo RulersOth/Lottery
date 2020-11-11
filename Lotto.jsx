@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import Ball from './Ball';
+import './style.css';
 
 function getWinNumbers() {
     console.log('getWinNumbers'); //its better that console log is in every function to see when it turns on
