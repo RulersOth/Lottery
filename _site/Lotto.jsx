@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import Ball from './Ball';
+import './style.css';
 
 function getWinNumbers() {
     console.log('getWinNumbers'); //its better that console log is in every function to see when it turns on
@@ -25,12 +26,12 @@ const Lotto = () => {
         for (let i = 0; i < winNumbers.length - 1; i++) {
             timeouts.current[i] = setTimeout(() => {
                 setWinBalls((prevBalls) => [...prevBalls, winNumbers[i]]);
-            }, (i + 1) * 700);
+            }, (i + 1) * 500);
         }
         timeouts.current[6] = setTimeout(() => {
             setBonus(winNumbers[6]);
             setRedo(true);
-        }, 5000);
+        }, 3800);
         return () => {
             timeouts.current.forEach((v) => {
                 clearTimeout(v);
